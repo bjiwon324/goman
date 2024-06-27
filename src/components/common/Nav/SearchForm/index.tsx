@@ -1,15 +1,20 @@
-import React, { ChangeEvent, useState } from "react"
+import React, { ChangeEvent, FormEventHandler, useState } from "react"
   
 
  export default function SearchForm() {
-    const [value, setValue] = useState<string>('');
+  const [value, setValue] = useState<string>('');
 
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value);
+  }
+
+  const handleSubmit : FormEventHandler<HTMLFormElement> = (e) =>{
+    e.preventDefault()
+    console.log(e)
   }
 
     return (
-      <form className="flex justify-between w-[80vw] ">
+      <form onSubmit={handleSubmit} className="flex justify-between w-[80vw] ">
         <input 
           type="search" 
           value={value} 
