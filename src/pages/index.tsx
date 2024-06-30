@@ -1,7 +1,9 @@
+import Nav from "@/components/common/Nav";
+
 export default function Home() {
   return (
     <>
-      <h1>고만해</h1>
+      <Nav isListPage={false}/>
     </>
   );
 }
