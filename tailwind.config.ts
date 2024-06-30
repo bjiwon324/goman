@@ -12,6 +12,9 @@ const config: Config = {
         blackHanSans: ["var(--font-black-han-sans)"],
         pretendard: ["var(--font-pretendard)"],
       },
+      backgroundImage: {
+        navCloud: "url('../../public/icons/Icon-nav-cloud.svg')"
+      }
     },
   },
   plugins: [],
