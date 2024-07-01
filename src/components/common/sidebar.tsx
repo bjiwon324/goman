@@ -1,8 +1,8 @@
 import Link from "next/link";
 export default function SideBar(){
-  const itemClasses = "text-black text-center text-xl font-semibold hover:bg-[#DFC7FF] p-4 "; 
-  return(<div className="w-[20rem] h-full bg-white fixed drop-shadow-xl">
-    <div className="pt-[4.8rem] flex flex-col gap-4 pb-[54.7rem] h-full">
+  const itemClasses = "text-black text-center text-[1rem] font-semibold hover:bg-[#DFC7FF] p-[0.5rem]"; 
+  return(<div className="w-[13rem] h-full bg-white fixed drop-shadow-xl">
+    <div className="pt-[1rem] flex flex-col  h-full">
   <div className={itemClasses}><Link href="/" >전체 고민</Link> </div>
   <div className={itemClasses} ><Link href="/" >친구 고민</Link></div>
   <div className={itemClasses}><Link href="/" >연애 고민</Link></div>

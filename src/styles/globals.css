@@ -8,8 +8,11 @@
 
 h1 {
   font-family: var(--font-black-han-sans);
+  
 }
-
+html {
+  font-size: 62.5%;
+}
 body {
   font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
