@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <h1>고만해</h1>
-<!--       <Dropdown options={['Option dddddddddddddd1', 'Option 2', 'Option 3']} 
-        onSelect={handleSelect} /> -->
+{/* <!--       <Dropdown options={['Option dddddddddddddd1', 'Option 2', 'Option 3']} 
+        onSelect={handleSelect} /> --> */}
     </>
   );
 }
