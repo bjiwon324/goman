@@ -21,6 +21,7 @@ main {
   flex-wrap: wrap;
   align-items: baseline;
 }
+
 .dropdwon-rotate-animation {
   transition: transform 0.3s ease;
 }
