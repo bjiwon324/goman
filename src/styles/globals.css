@@ -16,13 +16,46 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
 .dropdwon-rotate-animation {
   transition: transform 0.3s ease;
 }
 
+.three-lines {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.single-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skeleton-loader {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
