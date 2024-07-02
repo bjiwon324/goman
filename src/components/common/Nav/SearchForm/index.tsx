@@ -20,10 +20,9 @@ import React, { ChangeEvent, FormEventHandler, useState } from "react"
           value={value} 
           onChange={handleChange} 
           placeholder="검색어를 입력해 주세요"
-          className="bg-slate-50  w-[70vw] rounded-[15px] flex-grow px-6 py-4" 
+          className="bg-slate-50  w-[70vw] rounded-[15px] flex-grow px-6 py-4 outline-none" 
         />
-        <button type="submit" className="rounded-xl px-4 py-2 bg-slate-50 text-zinc-500 ml-3 font-semibold">검색</button>
-      </form>
+<button type="submit" className="rounded-xl px-4 py-2 bg-slate-50 text-zinc-500 ml-3 font-semibold hover:bg-violet-400 hover:text-white transition duration-300">검색</button></form>
     );
   }
   
