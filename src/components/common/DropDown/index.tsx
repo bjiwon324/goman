@@ -5,9 +5,10 @@ import React, { useRef, useState } from 'react';
 interface DropdownProps {
   options: string[];
   onSelect: (value: string) => void;
+  className?:string;
 }
 
-export default function Dropdown({ options, onSelect } :DropdownProps){
+export default function Dropdown({ options, onSelect,className } :DropdownProps){
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
@@ -19,10 +20,11 @@ export default function Dropdown({ options, onSelect } :DropdownProps){
   };
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left" >
+      
       <button
           type="button"
-          className="flex justify-between items-center gap-4 w-full rounded-md px-4 py-2 font-medium bg-pink-200 text-gray-700 hover:bg-pink-300 focus:outline-none"
+          className={`flex justify-between items-center gap-4 w-full rounded-md px-4 py-2 font-medium bg-pink-200 text-gray-700 hover:bg-pink-300 focus:outline-none ${className}`}
           onClick={() => setIsOpen(!isOpen)}
       >
         <p>{selectedOption ||options[0] } </p>
@@ -30,7 +32,7 @@ export default function Dropdown({ options, onSelect } :DropdownProps){
       </button>
 
       {isOpen && (
-        <div className="origin-top-right absolute left-0 mt-2 rounded-md shadow-lg text-nowrap bg-white ring-1 ring-black ring-opacity-5">
+        <div className="origin-top-right absolute left-0 mt-2 rounded-md shadow-lg text-nowrap bg-white ring-1 ring-black ring-opacity-5  z-10 ">
             {options.map((option, index) => (
               <button
                 key={index}

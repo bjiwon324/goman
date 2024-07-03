@@ -1,4 +1,4 @@
-import SideBar from "@/components/common/sidebar";
+import SideBar from "@/components/common";
 import Image from "next/image"
 import backIcon from "../../public/icons/backIcon.svg";
 import clockIcon from "../../public/icons/clockIcon.png";
