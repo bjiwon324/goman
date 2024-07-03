@@ -10,9 +10,9 @@ import Link from "next/link";
 
 
     return(
-        <nav className="w-[100vw] h-[250px] sticky top-0 flex flex-col justify-center items-center bg-violet-200 mr-auto z-10" >
+        <nav className={`w-[100vw] h-[${isListPage ? '20rem': '15rem'}] sticky top-0 flex flex-col justify-center items-center bg-violet-200 mr-auto z-10`} >
           <div className=" flex flex-col justify-center items-center gap-[30px] py-[25px]">
-           <h1 className={`text-zinc-500 text-[52px] text-center w-[300px] py-[30px] bg-navCloud bg-cover bg-center`}>고만해!</h1>
+           <h1 className={`text-zinc-500 text-[30px] text-center w-[23rem] py-[30px] bg-navCloud bg-cover bg-center`}>고만해!</h1>
          {isListPage&& 
          <div className="flex items-center gap-8"> 
           <SearchForm/>
