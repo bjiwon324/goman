@@ -1,6 +1,6 @@
+import SideBar from "@/components/common";
 import Dropdown from "@/components/common/DropDown";
 import Nav from "@/components/common/Nav";
-import SideBar from "@/components/common/sidebar";
 import CardList from "@/components/domain/listPage/CardList";
 
 const totalMook = {count : 4, items : [{title: 'ddd', text: 'fadf' , category : 'sfdfa' , coment: 'sdfasdfa', creacted : '20200423' }, {title: 'ddd', text: 'fadf' , category : 'sfdfa' , coment: 'sdfasdfa', creacted : '20200423' },{title: 'ddd', text: 'fadf' , category : 'sfdfa' , coment: 'sdfasdfa', creacted : '20200423' },{title: 'ddd', text: 'fadf' , category : 'sfdfa' , coment: 'sdfasdfa', creacted : '20200423' },]}
@@ -15,8 +15,8 @@ export default function ListPage() {
     <>
     <Nav isListPage={true}/>
     <SideBar/>
-    <section className=" w-[70%] mx-auto">
-      <article className="flex justify-between items-center mt-10 mx-auto">
+    <section className=" w-[80%] mx-auto">
+      <article className="flex justify-between items-center mt-10 mx-auto text-[16px]">
         <h2>총 {totalMook.count}개의 {}고민</h2>  
         <Dropdown options={['최신순', '댓글순']} 
         onSelect={handleSelect} />
