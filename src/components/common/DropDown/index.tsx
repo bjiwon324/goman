@@ -24,7 +24,7 @@ export default function Dropdown({ options, onSelect,className } :DropdownProps)
       
       <button
           type="button"
-          className={`flex justify-between items-center gap-4 w-full rounded-md px-4 py-2 font-medium bg-pink-200 text-gray-700 hover:bg-pink-300 focus:outline-none ${className}`}
+          className={`flex justify-between items-center gap-4 w-full rounded-md px-4 py-2 font-medium bg-[#F8E3F0] text-gray-700 focus:bg-[#ffc0e7] focus:outline-none ${className}`}
           onClick={() => setIsOpen(!isOpen)}
       >
         <p>{selectedOption ||options[0] } </p>
@@ -32,7 +32,7 @@ export default function Dropdown({ options, onSelect,className } :DropdownProps)
       </button>
 
       {isOpen && (
-        <div className="origin-top-right absolute left-0 mt-2 rounded-md shadow-lg text-nowrap bg-white ring-1 ring-black ring-opacity-5  z-10 ">
+        <div className="origin-top-right absolute left-0 mt-2 w-[100%] rounded-md shadow-lg text-nowrap bg-white ring-1 ring-black ring-opacity-5 z-10 ">
             {options.map((option, index) => (
               <button
                 key={index}
