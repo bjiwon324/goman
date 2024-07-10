@@ -11,16 +11,16 @@ function Circle({ size, isShadow, className  }: CircleProps) {
   let circleSizeClass = '';
   switch (size) {
     case 'sm':
-      circleSizeClass = 'w-[10rem] h-[10rem] sm:w-[20rem] sm:h-[20rem]';
+      circleSizeClass = 'w-[100px] h-[100px] sm:w-[200px] sm:h-[200px]';
       break;
     case 'md':
-      circleSizeClass = 'w-[16rem] h-[16rem] sm:w-[32rem] sm:h-[32rem]';
+      circleSizeClass = 'w-[160px] h-[160px] sm:w-[320px] sm:h-[320px]';
       break;
     case 'lg':
-      circleSizeClass = 'w-[22rem] h-[22rem] sm:w-[44rem] sm:h-[44rem]';
+      circleSizeClass = 'w-[220px] h-[220px] sm:w-[440px] sm:h-[440px]';
       break;
     default:
-      circleSizeClass = 'w-[16rem] h-[16rem] sm:w-[32rem] sm:h-[32rem]';
+      circleSizeClass = 'w-[160px] h-[160px] sm:w-[320px] sm:h-[320px]';
       break;
   }
 
@@ -31,16 +31,15 @@ function Circle({ size, isShadow, className  }: CircleProps) {
 
 export default function Clouds() {
   return (
-  <article className="relative top-[43%] left-[92%] sm:top-[46%] sm:left-[96%] transform translate-x-[-50%] translate-y-[-50%]">
-    <Circle className="absolute bottom-[3.2rem] left-[-16rem] sm:bottom-[3.2rem] sm:left-[-35.2rem] !bg-yellow-200" size="sm" isShadow={true} /> 
-    <Circle className="absolute bottom-[-8rem] left-[-17.6rem] sm:bottom-[-17.6rem] sm:left-[-37.6rem] animate-cloud-float" size="sm" isShadow={true} /> 
-    <Circle className="absolute bottom-[-9.6rem] left-[-14.4rem] sm:bottom-[-19.2rem] sm:left-[-28.8rem] animate-cloud-float" size="lg" isShadow={true} /> 
-    <Circle className="absolute bottom-[-11.2rem] left-[-3.2rem] sm:bottom-[-22.4rem] sm:left-[0rem] animate-cloud-float" isShadow={true} /> 
-    <Circle className="absolute bottom-[-4.8rem] left-[6.4rem] sm:bottom-[-9.6rem] sm:left-[14.4rem] animate-cloud-float" isShadow={true}  /> 
-    <Circle className="absolute bottom-[-3.2rem] left-[-0.8rem] sm:bottom-[-4.8rem] sm:left-[-1.6rem] animate-cloud-float" />
-    <Image className="absolute bottom-[-9.6rem] left-[6.4rem] sm:bottom-[-19.2rem] sm:left-[22.4rem]" src={'/icons/Icon-violet-cloud.svg'} alt="구름 이미지" width={226} height={165}/>
-    <Image className="hidden sm:inline-block absolute bottom-[0rem] left-[-44.8rem] " src={'/icons/Icon-violet-cloud.svg'} alt="구름 이미지" width={226} height={165}/>
-</article>
-
+    <article className="relative top-[34%] sm:top-[45%] left-[45%] sm:left-[48%]">
+      <Circle className="absolute bottom-[2rem] left-[-10rem] sm:bottom-[2rem] sm:left-[-22rem] !bg-yellow-200" size="sm" isShadow={true} /> 
+      <Circle className="absolute bottom-[-5rem] left-[-11rem] sm:bottom-[-11rem] sm:left-[-23.5rem] animate-cloud-float" size="sm" isShadow={true} /> 
+      <Circle className="absolute bottom-[-6rem] left-[-9rem] sm:bottom-[-12rem] sm:left-[-18rem] animate-cloud-float" size="lg" isShadow={true} /> 
+      <Circle className="absolute bottom-[-7rem] left-[-2rem] sm:bottom-[-14rem] sm:left-[0rem] animate-cloud-float" isShadow={true} /> 
+      <Circle className="absolute bottom-[-3rem] left-[4rem] sm:bottom-[-6rem] sm:left-[9rem] animate-cloud-float" isShadow={true}  /> 
+      <Circle className="absolute bottom-[-2rem] left-[-0.5rem] sm:bottom-[-3rem] sm:left-[-1rem] animate-cloud-float" />
+      <Image className="absolute bottom-[-6rem] left-[4rem] sm:bottom-[-12rem] sm:left-[14rem]" src={'/icons/Icon-violet-cloud.svg'} alt="구름 이미지" width={226} height={165}/>
+      <Image className="hidden sm:inline-block absolute bottom-[0rem] left-[-28rem] " src={'/icons/Icon-violet-cloud.svg'} alt="구름 이미지" width={226} height={165}/>
+    </article>
   );
 }
